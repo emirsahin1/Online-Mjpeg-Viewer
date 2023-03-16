@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <div id="page">
+        <div id="video-container">
+            <img id="video" src="http://192.168.0.0:5001/mjpeg">
+        </div>
+        <button id="hide-controls" class="button">Hide Controls</button>
+        <div id="controls">
+            <!-- textbox for inputting url -->
+            <label id="url-label"for="url">URL:</label>
+            <input type="text" id="url" value="http://192.168.0.0:5001/mjpeg" />
+            <button id="stop" class="button">Start</button>
+            <button id="r_left" class="button">Rotate Left</button>
+            <button id="r_right" class="button">Rotate Right</button>
+            <div style="margin-right: 20px;">
+                <label class="label" id="zoom-label"for="zoom-slider">Zoom</label>
+                <input type="range" class="slider" id="zoom-slider" min="1" max="10" step="0.1" value="1">
+            </div>
+            <div>
+                <label class="label" for="pan-sliderY">Pan Y:</label>
+                <input type="range" class="slider" id="pan-sliderY" min="0" max="100" value="50" step="0.1" />
+                <label class="label" for="pan-slider">Pan X:</label>
+                <input type="range" class="slider" id="pan-sliderX" min="0" max="100" value="50" step="0.1"/>
+              </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
