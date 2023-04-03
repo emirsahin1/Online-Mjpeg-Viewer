@@ -8,7 +8,7 @@ I wanted a simple website to watch my 3d Printer's octoprint stream with zoom/pa
 
 This website is not hosted anywhere due to problems with https and cors. Browsers do not allow the website to get information from private http streams.
 
-Simply download the code and open up index.html or serve the website locally so that you can view from any device within your network (this is faily simple to do, look up local host serving).
+Simply download the code and open up index.html or host the website locally so that you can view from any device within your network (this is faily simple to do, look up local host serving). I personally host it a from old a phone which is also running my octoprint server.
 
  
 ## Interface
